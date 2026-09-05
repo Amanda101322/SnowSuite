@@ -20,7 +20,7 @@ body {
     overflow: hidden;
     position: relative;
 }
-.taskbar {
+.dock {
     position: absolute;
     bottom: 20px;
     height: 60px;
@@ -30,20 +30,32 @@ body {
     align-items: center;
     gap: 8px;
     background: rgba(255, 255, 255, 0.65);
-    bottom: 20px;
     left: 50%;
     backdrop-filter: blur(20px);
     box-shadow: 0 10px 30px rgba(40, 70, 90, 0.15);
     transform: translateX(-50%);
+    border-radius: 18px;
 }
-.launcher {
-    height: 44px;
-    padding: 0 16px;
+.app-icon {
+    height: 48px;
+    width: 48px;
     border: none;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    font-weight: 600;
-    color: #1e3550;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    font-size: 24px;
     cursor: pointer;
+}
+.app-icon .icon {
+    font-size: 26px;
+}
+.app-icon span:last-child {
+    display: none;
+}
+.app-icon:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
 }
