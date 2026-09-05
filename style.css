@@ -23,7 +23,7 @@ body {
 .dock {
     position: absolute;
     bottom: 20px;
-    height: 60px;
+    height: 64px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 8px 12px;
     display: flex;
@@ -48,9 +48,21 @@ body {
     background: transparent;
     font-size: 24px;
     cursor: pointer;
+    color: #1e3550;
 }
 .app-icon .icon {
-    font-size: 26px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+}
+
+.app-icon .icon svg {
+    width: 32px;
+    height: 32px;
 }
 .app-icon span:last-child {
     display: none;
