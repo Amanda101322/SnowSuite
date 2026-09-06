@@ -60,7 +60,6 @@ body {
     background: rgba(255, 255, 255, 0.35);
     border-radius: 10px;
 }
-
 .app-icon .icon svg {
     width: 32px;
     height: 32px;
@@ -71,4 +70,66 @@ body {
 .app-icon:hover {
     background: rgba(255, 255, 255, 0.5);
     transform: translateY(-3px);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-bar {
+    height: 48px;
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(16px);
+}
+.top-bar-icon {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 9px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.top-bar-left,
+.top-bar-right {
+    display: flex;
+    align-items: center;
+}
+.top-bar-left {
+    gap: 14px;
+}
+.top-bar-right {
+    gap: 12px;
+}
+.snow-menu {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.brand {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e3550;
+}
+.top-bar-item {
+    border: none;
+    background: transparent;
+    color: #1e3550;
+    font-size: 13px;
+    cursor: pointer;
 }
