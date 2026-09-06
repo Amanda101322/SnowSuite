@@ -78,7 +78,7 @@ body {
     align-items: center;
 }
 .top-bar {
-    height: 48px;
+    height: 30px;
     width: 100%;
     padding: 0 16px;
     display: flex;
@@ -86,7 +86,7 @@ body {
     justify-content: space-between;
     background: rgba(255, 255, 255, 0.35);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(20px);
 }
 .top-bar-icon {
     width: 32px;
@@ -99,6 +99,14 @@ body {
     justify-content: center;
     cursor: pointer;
 }
+.top-bar-icon svg {
+    width: 17px;
+    height: 17px;
+}
+.top-bar-icon:hover,
+.snow-menu:hover {
+    background: rgba(255, 255, 255, 0.55);
+}
 .top-bar-left,
 .top-bar-right {
     display: flex;
@@ -108,7 +116,7 @@ body {
     gap: 14px;
 }
 .top-bar-right {
-    gap: 12px;
+    gap: 14px;
 }
 .snow-menu {
     width: 36px;
@@ -132,4 +140,21 @@ body {
     color: #1e3550;
     font-size: 13px;
     cursor: pointer;
+}
+.time-date {
+    font-size: 11px;
+    color: #52677a;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    line-height: 1.2;
+}
+.time {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1e3550;
+}
+.date {
+    font-size: 11px;
+    color: #52677a;
 }
