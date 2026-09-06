@@ -158,3 +158,34 @@ body {
     font-size: 11px;
     color: #52677a;
 }
+.desktop-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+.desktop-icons {
+    position: absolute;
+    top: 28px;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.desktop-icon {
+    width: 70px;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+.desktop-icon .icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
